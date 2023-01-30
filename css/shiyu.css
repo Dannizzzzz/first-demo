@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 给页面中所有的a去除下划线 */
+a{
+    text-decoration: none;
+}
+/* 去除页面中所有列表的样式 */
+ul,ol,li{
+    list-style: none;
+}
+/* 现将所有文字大小统一为12px，若有不同，再修改即可 */
+body{
+    font: 12px;
+}
+/* 页面中所有图片和文字都垂直居中 */
+img{
+    vertical-align: middle;
+}
+/* 因为页面中大部分版心是一样的宽度，并且需要水平居中浏览器，所以在这里给版心统一设置一下，用一个相同的class名字 */
+.same{
+    width: 1180px;
+    margin: 0 auto;
+}
+/* -------------------------- 第一部分 导航栏 ---------------------------- */
+header{
+    height: 82px;
+    line-height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.headerNav{
+    width: 697px;
+    height: 51px;
+    line-height: 51px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+}
+.headerNav p{
+    float: left;
+    margin-left: 20px;
+    padding: 0 10px;
+}
+.headerNav p a{
+    font-size: 16px;
+    color: #000;
+}
+.headerNav p:first-of-type{
+    border-bottom: 2px solid #f13a3a;
+}
+.headerNav p:first-of-type a{
+    color: #f13a3a;
+}
+.headerNav p:hover{
+    border-bottom: 2px solid #f13a3a;
+}
+.headerNav p:hover a{
+    color: #f13a3a;
+}
+/* -------------------------- 第二部分 头部大图 ---------------------------- */
+#banner{
+    background: #1b252e;
+}
+#bannerCon{
+    height: 911px;
+    position: relative;
+}
+#bannerCon>img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.company{
+    margin: 0 auto;
+    padding-top: 736px;
+    height: 175px;
+}
+.companyLeft{
+    float: left;
+    width: 770px;
+    height: 175px;
+}
+.companyLeft p:first-of-type{
+    font-size: 22px;
+    line-height: 62px;
+    color: #fefefe
+}
+.companyLeft p:last-of-type{
+    font-size: 16px;
+    line-height: 32px;
+    color: #fefefe
+}
+.companyRight{
+    width: calc(100% - 910px);
+    height: 133px;
+    float: left;
+    padding-top: 42px;
+    padding-left: 140px;
+}
+.companyRight button{
+    width: 164px;
+    height: 54px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 30px;
+}
+/* -------------------------- 第三部分 我们的服务 ---------------------------- */
+#services{
+    height: 564px;
+    padding-top: 31px;
+}
+.servicesTitle{
+    height: 154px;
+    line-height: 154px;
+    text-align: center;
+    font-size: 36px;
+    color: #212121;
+    font-weight: 900;
+    border-bottom: 1px solid #dedede;
+}
+.servicesBottom{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.servicesBottom dl img{
+    margin-bottom: 53px;
+}
+.servicesBottom dl dt{
+    font-size: 22px;
+    line-height: 44px;
+    color: #333333;
+    font-weight: bold;
+}
+.servicesBottom dl dd{
+    line-height: 22px;
+    color: #999999;
+}
+/* -------------------------- 第四部分 成功案例 ---------------------------- */
+#success{
+    background: #ebebeb;
+}
+#successCon{
+    padding-top: 55px;
+    height: 660px;
+}
+.successConTitle p:first-of-type{
+    font-size: 32px;
+    line-height: 61px;
+    color: #333333;
+    text-align: center;
+    font-weight: 900;
+}
+.successConTitle p:last-of-type{
+    font-size: 16px;
+    line-height: 26px;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 39px;
+}
+.caseList ul{
+    width: 272px;
+    height: 212px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background: #fefefe;
+    text-align: center;
+}
+.caseList ul:nth-of-type(4n){
+    margin-right: 0;
+}
+.caseList ul img{
+    margin: 8px 8px 2px 8px;
+    width: 256px;
+    height: 164px;
+    vertical-align: top;
+}
+.caseList ul li{
+    line-height: 38px;
+    color: #444444;
+}
+.caseList ul:hover{
+    box-shadow: 0 0 8px 1px black;
+}
+/* -------------------------- 第五部分 中部大图 ---------------------------- */
+#midBanner{
+    height: 302px;
+    position: relative;
+    padding-top: 130px;
+}
+#midBanner img{
+    height: 428px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+#midBanner p{
+    text-align: center;
+    line-height: 88px;
+    font-size: 30px;
+    color: #fefefe;
+}
+.qouteL{
+    font-size: 40px;
+    color: #f03a3a;
+    font-weight: 900;
+    position: absolute;
+    top: 133px;
+    left: 213px;
+}
+.qouteR{
+    font-size: 40px;
+    color: #f03a3a;
+    font-weight: 900;
+    position: absolute;
+    top: 133px;
+    left: 936px;
+}
+/* -------------------------- 第六部分 关于我们的优势 ---------------------------- */
+#advantages{
+    height: 533px;
+    padding-top: 63px;
+}
+.advantagesTitle p:first-of-type{
+    font-size: 32px;
+    line-height: 61px;
+    color: #333333;
+    text-align: center;
+    font-weight: 900;
+}
+.advantagesTitle p:last-of-type{
+    font-size: 16px;
+    line-height: 26px;
+    color: #999999;
+    text-align: center;
+}
+.advantagesBottom{
+    padding-top: 83px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.advantagesBottom img{
+    margin-bottom: 50px;
+    vertical-align: top;
+}
+.advantagesBottom dt{
+    line-height: 60px;
+    font-size: 32px;
+    color: #f13a3a;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.advantagesBottom dd{
+    line-height: 34px;
+    font-size: 16px;
+    color: #999999;
+}
+/* -------------------------- 第七部分 体验价值 ---------------------------- */
+#experience{
+    height: 536px;
+    position: relative;
+}
+#experience img{
+    height: 536px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.experienceRight{
+    width: 496px;
+    height: 422px;
+    padding-top: 114px;
+    padding-left: 684px;
+}
+.experienceRight h3{
+    font-size: 38px;
+    line-height: 105px;
+    color: #444444;
+}
+.experienceRight p{
+    font-size: 16px;
+    line-height: 32px;
+    color: #7d7d7d;
+}
+.experienceRight button{
+    width: 156px;
+    height: 49px;
+    border: 1px solid #7d7d7d;
+    background: #fefefe;
+    font-size: 14px;
+    color: #010101;
+    margin-top: 83px;
+}
+.experienceRight button:hover{
+    background: #f13a3a;
+    color: #ffffff;
+}
+/* -------------------------- 第八部分 练习我们 ---------------------------- */
+#contact{
+    height: 657px;
+    padding-top: 49px;
+    position: relative;
+}
+.contactTitle h4{
+    font-size: 32px;
+    line-height: 105px;
+    color: #333333;
+    text-align: center;
+}
+.contactTitle p:first-of-type{
+    font-size: 16px;
+    line-height: 34px;
+    color: #666666;
+    text-align: center;
+}
+.contactTitle p:last-of-type{
+    font-size: 22px;
+    line-height: 44px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 67px;
+}
+.media{
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.media dl{
+    width: 298px;
+    height: 60px;
+    border: 1px solid #cacaca;
+    padding-left: 50px;
+    padding-top: 28px;
+    margin-bottom: 140px;
+}
+.media dl img{
+    float: left;
+    vertical-align: top;
+    margin-right: 40px;
+}
+.media dl dt{
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+.media dl dd{
+    line-height: 31px;
+    color: #666666;
+}
+.kuang{
+    width: 344px;
+    height: 84px;
+    border: 3px solid #000000;
+    margin: 0 auto;
+}
+.erweima{
+    width: 150px;
+    height: 177px;
+    background: #fff;
+    position: absolute;
+    bottom: 72px;
+    left: 515px;
+}
+.erweima img{
+    width: 150px;
+    height: 150px;
+    vertical-align: top;
+}
+.erweima p{
+    color: #666666;
+    line-height: 22px;
+    text-align: center;
+    font-size: 14px;
+}
+/* -------------------------- 第九部分 图片列表 ---------------------------- */
+#picLists{
+    background: #ebebeb;
+    padding-top: 100px;
+}
+#picListsCon{
+    height: 414px;
+    display: flex;
+    justify-content: space-between;
+}
+#picListsCon dl{
+    width: 272px;
+    height: 284px;
+    background: #fefefe;
+}
+#picListsCon dl img{
+    vertical-align: top;
+    width: 272px;
+    margin-bottom: 16px;
+}
+#picListsCon dt{
+    font-size: 16px;
+    line-height: 39px;
+    color: #333333;
+    text-align: center;
+}
+#picListsCon dd{
+    font-size: 12px;
+    line-height: 26px;
+    color: #777777;
+    text-align: center;
+}
+#picListsCon dl:hover{
+    background: #f13a3a;
+}
+#picListsCon dl:hover dt, #picListsCon dl:hover dd{
+    color: #ffffff;
+}
+/* -------------------------- 第十部分 尾部 ---------------------------- */
+#footer{
+    border-top: 2px solid #f13a3a;
+    background: #1b252e;
+}
+#footerCon{
+    height: 234px;
+    padding-top: 26px;
+}
+.footerConTop{
+    height: 114px;
+    border-bottom: 1px solid #313a43;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerConTop ul{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.footerConTop img{
+    float: left;
+    margin-right: 10px;
+}
+.footerConTop li{
+    font-size: 12px;
+    color: #8a929c;
+}
+.footerConBottom{
+    padding-top: 23px;
+}
+.footerConBottom p{
+    font-size: 12px;
+    line-height: 26px;
+    color: #8b939d;
+    text-align: center;
+}
+.footerConBottom p a{
+    margin-right: 24px;
+    color: #8b939d;
+    font-size: 12px;
+}
